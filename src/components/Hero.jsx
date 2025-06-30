@@ -28,7 +28,7 @@ const Hero = () => {
     }
 
     useEffect(()=>{
-        if(loadedVideos === totalVideos - 1) {
+        if(loadedVideos === totalVideos - 4) {
             setIsLoading(false)
         }
     }, [loadedVideos])
@@ -125,9 +125,11 @@ const Hero = () => {
                 />
             </div>
 
-            <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
-                G<b>a</b>ming
-            </h1>
+            <div>
+                <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
+                    <b>O</b>nce <b>H</b>uman
+                </h1>
+            </div>
 
             <div className='absolute left-0 top-0 z-40 size-full'>
                 <div className='mt-24 px-5 sm:px-10'>
@@ -143,7 +145,7 @@ const Hero = () => {
             </div>
         </div>
             <h1 className='special-font hero-heading absolute bottom-5 right-5 text-black'>
-                G<b>a</b>ming
+                <b>O</b>nce <b>H</b>uman
             </h1>
     </div>
   )
