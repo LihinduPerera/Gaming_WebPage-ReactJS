@@ -29,8 +29,8 @@ const About = () => {
   return (
     <div id='about' className='min-h-screen w-screen'>
         <div className='relative mb-8 mt-36 flex flex-col items-center gap-5'>
-            <h2 className='font-general text-sm uppercase md:text-[15px] '>
-                Welcome to FRACTURED : What breaks you can also shape you.
+            <h2 className='font-general text-sm uppercase md:text-[15px] text-center'>
+                Welcome to FRACTURED<br/>What breaks you can also shape you.
             </h2>
 
             <AnimatedTitle 
@@ -40,7 +40,7 @@ const About = () => {
 
             <div className='about-subtext'>
               <p>In a world undone by collapse, survival means more than fighting—it's about who you become when there's nothing left</p>
-              <p>Crafted with Unity HDRP </p>
+              <p>Crafted with Unity HDRP</p>
             </div>
         </div>
 
@@ -48,7 +48,7 @@ const About = () => {
           <div className='mask-clip-path about-image'>
             <img
               src='img/about.webp'
-              alt='Bqckground'
+              alt='Background'
               className='absolute left-0 top-0 size-full object-cover'
             />
           </div>

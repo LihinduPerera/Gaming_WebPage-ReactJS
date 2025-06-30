@@ -33,11 +33,11 @@ const AnimatedTitle = ({ title, containerClass }) => {
           key={index}
           className="flex-center max-w-full full-wrap gap-2 px-10 md:gap-3"
         >
-          {line.split('').map((word, i) => (
+          {line.split(' ').map((word, i) => (
             <span
               key={i}
               className="animated-word"
-              dangerouslySetInnerHTML={{ __html: word }}
+              dangerouslySetInnerHTML={{__html: word }}
             />
           ))}
         </div>
