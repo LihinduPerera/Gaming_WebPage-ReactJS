@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React from 'react'
+import AnimatedTitle from './AnimatedTitle'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -32,9 +33,12 @@ const About = () => {
                 Welcome to FRACTURED : What breaks you can also shape you.
             </h2>
 
-            <div className='mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]'>
-                Endure a broken world where every choice could be your last.
-            </div>
+            <AnimatedTitle 
+            title="Endure a broken world where <br/> every choice could be your last."
+            containerClass="mt-5 !text-black text-center"
+            />
+
+            
 
             <div className='about-subtext'>
               <p>In a world undone by collapse, survival means more than fighting—it's about who you become when there's nothing left</p>

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Button from './Button';
-import { TiLocationArrow } from 'react-icons/ti';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { GiRank3 } from 'react-icons/gi';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -140,7 +140,7 @@ const Hero = () => {
                         A game made in unity to <br/>
                         understand unity concepts!
                     </p>
-                    <Button id="watch-trailer" title="Watch Trailer" leftIcon={<TiLocationArrow/>} containerClass="!bg-yellow-300 flex-center gap-1"/>
+                    <Button id="leaderboard" title="Leaderboard" leftIcon={<GiRank3/>} containerClass="!bg-yellow-300 flex-center gap-1"/>
                 </div>
             </div>
         </div>

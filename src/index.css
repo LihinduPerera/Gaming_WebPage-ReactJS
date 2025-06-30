@@ -208,7 +208,7 @@
 /* animated word */
 .animated-word {
   font-family: var(--font-zentry);
-  font-weight: 900; /* font-black */
+  font-weight: 200; /* font-black */
   opacity: 0;
   /* complex transform - can't use @apply */
   transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
