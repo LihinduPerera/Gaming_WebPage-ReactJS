@@ -137,7 +137,7 @@ const Hero = () => {
                         Fr<b>a</b>ctur<b>e</b>d
                     </h1>
                     <p className='mb-5 max-w-64 font-robert-regular text-blue-100'>
-                        A game made in unity to <br/>
+                        Crafted using Unity to <br/>
                         understand unity concepts!
                     </p>
                     <Button id="leaderboard" title="Leaderboard" leftIcon={<GiRank3/>} containerClass="!bg-yellow-300 flex-center gap-1"/>

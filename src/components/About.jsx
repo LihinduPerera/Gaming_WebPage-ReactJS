@@ -38,11 +38,9 @@ const About = () => {
             containerClass="mt-5 !text-black text-center"
             />
 
-            
-
             <div className='about-subtext'>
               <p>In a world undone by collapse, survival means more than fighting—it's about who you become when there's nothing left</p>
-              <p>Crafted with Unity HDRP</p>
+              <p>Crafted with Unity HDRP </p>
             </div>
         </div>
 
