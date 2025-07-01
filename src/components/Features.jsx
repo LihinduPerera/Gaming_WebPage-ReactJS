@@ -1,6 +1,6 @@
 import React from "react";
 
-const BentoCard = ({ src, title, description, isComingSoon }) => {
+const BentoCard = ({ src, title, description}) => {
   return (
     <div className="relative size-full">
       <video
@@ -48,13 +48,32 @@ const Features = () => {
               </>
             }
             description="In a world where the weak don’t last, survival isn’t just instinct—it’s a choice. Scavenge, fight, and endure against impossible odds."
-            isComingSoon
           />
         </div>
 
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
-            <div className="bento-title_1 row-span-1 md:col-span-1 md:row-span-2">
+            <div className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+              <BentoCard
+                src="videos/feature-2.mp4"
+                title={<>L<b>o</b>ss</>}
+                description="Everyone’s lost something. Family, hope, identity. In Fractured, pain isn’t a backstory—it’s the present." 
+              />
+            </div>
 
+            <div className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+              <BentoCard
+                src="videos/feature-3.mp4"
+                title={<>H<b>o</b>pe</>}
+                description="In the ruins of yesterday, a flicker remains. Fragile, fleeting, but powerful enough to change everything."
+              />
+            </div>
+
+            <div className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+              <BentoCard
+                src="videos/feature-4.mp4"
+                title={<>D<b>e</b>c<b>a</b>y</>}
+                description="Civilization has rotted away. Every cracked wall, overgrown street, and silent ruin tells a story of what we lost."
+              />
             </div>
         </div>
       </div>
