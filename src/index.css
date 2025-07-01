@@ -238,7 +238,7 @@
 /* Bento title */
 .bento-title {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 100;
   font-family: var(--font-zentry);
   font-size: 2.25rem; /* text-4xl */
 }
