@@ -1,4 +1,5 @@
 import React from "react";
+import { IoGameController } from "react-icons/io5";
 
 const BentoCard = ({ src, title, description}) => {
   return (
@@ -73,6 +74,24 @@ const Features = () => {
                 src="videos/feature-4.mp4"
                 title={<>D<b>e</b>c<b>a</b>y</>}
                 description="Civilization has rotted away. Every cracked wall, overgrown street, and silent ruin tells a story of what we lost."
+              />
+            </div>
+
+            <div className="bento_tilt_2">
+              <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+                <h1 className="bento-title special-font max-w-64 text-black">M<b>O</b>RE <br/> C<b>O</b>MING <br/> S<b>O</b><b>O</b>N! </h1>
+
+                <IoGameController className="m-5 scale-[5] self-end"/>
+              </div>
+            </div>
+
+            <div className="bento-tilt_2">
+              <video
+                src="videos/hero-4.mp4"
+                loop
+                muted
+                autoPlay
+                className="size-full object-cover object-center"
               />
             </div>
         </div>
