@@ -219,11 +219,21 @@
 /* Bento tilt styles */
 .bento-tilt_1 {
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  grid-column: span 2 / span 2;
+  border: 1px solid hsla(0, 0%, 100%, 0.1); /* Assumes a default HSLA border color – customize as needed */
   overflow: hidden;
-  border-radius: 0.375rem; /* rounded-md */
-  transition: transform 0.3s ease-out;
+  border-radius: 1rem; /* rounded-md */
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+
+  /* Mobile (default) */
+  grid-column: span 2 / span 2;
+}
+
+@media (min-width: 768px) {
+  .bento-tilt_1 {
+    grid-column: span 1 / span 1;
+  }
 }
 
 .bento-tilt_2 {
@@ -231,8 +241,10 @@
   grid-column: span 1 / span 1;
   grid-row: span 1 / span 1;
   overflow: hidden;
-  border-radius: 0.375rem;
-  transition: transform 0.3s ease-out;
+  border-radius: 0.375rem; /* rounded-md */
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
 }
 
 /* Bento title */
